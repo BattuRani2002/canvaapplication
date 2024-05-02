@@ -1,0 +1,62 @@
+<div class="parent row">
+    <div class="child1 col-6" [hidden]="showAdditionalContent">
+        <div class="txt my-5"> 
+            <h3>SignUp</h3>
+            <p>create an account</p>
+            <pre class="h my-5">-------fill details---------</pre>
+            <!-- Content specific to child1 goes here -->
+           
+              
+
+            <div class="form-floating col-4 mb-3 mx-auto">
+                <input type="email" class="form-control" formControlName="email" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-primary signinbutton" (click)="toggleSections()">Signup</button>
+            </div>
+          
+            <p class="hh">Already have an account? <a href="#" class="signin">Sign in</a></p>
+        </div>
+    </div>
+
+    <div class="child2 col-6">
+        <!-- Content specific to child2 goes here -->
+        <div class="img">
+            <img class="poss" src="assets\images\signup.jpeg" alt="">
+        </div>
+        <div class="hometxt">
+            <h6>"Transform your marketing efforts with our automation tool, generating social media visuals, display ads, website banners, and more effortlessly. Save time and boost engagement by streamlining your creative process today."</h6>
+        </div>
+    </div>
+
+    <!-- mmmm class content should always be displayed in place of child1 -->
+    <div class="child1 col-6 mmmm" [hidden]="!showAdditionalContent">
+        <div class="tt"> 
+            <h3>Verify Account</h3>
+            <pre>We have sent OTP on your mail</pre>
+            <p>create an account</p>
+            <pre class="h my-5">-------fill details---------</pre>
+            <div class="mb-3 col-6 mx-auto">
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
+              </div>
+              <div class="mb-3 col-6 mx-auto">
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Enter your password">
+              </div>
+              <div class="mb-3 col-6 mx-auto">
+                <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="confirm your password">
+              </div>
+              <div class="mb-3 col-6 mx-auto">
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter your OTP">
+                <pre>check ur mail for otp</pre>
+              </div>
+              <button type="button" class="btn btn-primary">verify</button>
+              <p class="hh">didnt receive otp <a href="#" class="signin">Resend OTP</a></p>
+
+
+
+    </div>
+</div>
+
+
+

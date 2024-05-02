@@ -1,0 +1,53 @@
+.txt{
+    text-align: center;
+    padding: 30px;
+}
+.signinbutton{
+    margin-left: 70%;
+    
+}
+.child2{
+    background-color:#33B864;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.semail{
+    color: coral;
+    font-size: larger;
+}
+.child1{
+    text-align: center;
+    background-color: rgb(252, 252, 251);
+}
+.poss{
+    height: 300px;
+    width: 300px;
+    border-radius: 30%;
+}
+
+.hometxt{
+    color: white;
+    margin-top: 30px;
+
+}
+.hh{
+    text-align: center;
+}
+.parent {
+    position: relative; /* Ensure the parent is a positioned container */
+}
+
+.child1 {
+    position: absolute; /* Position child1 absolutely */
+    top: 0;
+    left: 0;
+    width: 50%; /* Adjust this width according to your layout */
+}
+
+.child2 {
+    margin-left: 50%; /* Ensure child2 appears next to child1 */
+    width: 50%; /* Adjust this width according to your layout */
+}
